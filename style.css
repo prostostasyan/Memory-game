@@ -1,0 +1,136 @@
+:root {
+    --rounding: 10px;
+}
+
+body {
+    background: lightcyan;
+}
+
+fieldset {
+    border-radius: var(--rounding);
+
+}
+
+fieldset b {
+    font-size: 22px;
+}
+
+#container {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: center;
+}
+
+#game {
+    display: inline-block;
+    /*border: 1px black solid;*/
+}
+
+#field td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#field td:hover {
+    cursor: pointer;
+}
+
+#records {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+
+#field {
+    margin: 10px;
+    border-radius: 5px;
+    border-spacing: 20px;
+}
+
+.yellow {
+    background-color: rgba(247, 102, 5, 0.2);;
+}
+
+.cell {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    color: grey;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: var(--rounding);
+    box-shadow: 8px 8px 8px 0px rgba(34, 60, 80, 0.3);
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.layer {
+    position: absolute;
+    background-color: rgb(211, 78, 70);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    border-radius: var(--rounding);
+    background-image: url("img/ico/delete.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.layer:hover {
+
+    transform: scale(1.03);
+
+}
+
+.busy {
+    /* disable all mouse events on subElements */
+    pointer-events: none;
+}
+
+
+#choice {
+    margin-top: 5px;
+    border-radius: 6px;
+    background-color: seagreen;
+    color: whitesmoke;
+    text-shadow: 0px 0px 1px black;
+    border: 0.75px solid darkgrey;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#choice:hover {
+    transform: scale(1.03);
+}
+
+#choice:link, #choice:active, #choice:focus {
+    outline: none;
+}
